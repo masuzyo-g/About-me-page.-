@@ -1,4 +1,4 @@
-# HTML Basics — [Your Name]
+# HTML Basics — [Masuzyo Gbordzi]
 
 A single-page HTML5 demo built for ITD 210 (Web Page Design I)
 at Northern Virginia Community College.
@@ -13,7 +13,7 @@ tables, and a form with proper labels.
 
 ## Files
 
-- `index.html` — the assignment page
+- `about.html` — the assignment page
 - `screenshot.png` — the page rendered in a browser
 - `validator.png` — proof the page passes the W3C HTML validator
 
