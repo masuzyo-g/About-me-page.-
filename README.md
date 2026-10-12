@@ -9,13 +9,13 @@ tables, and a form with proper labels.
 
 ## Screenshot
 
-![Rendered page](screenshot.png)
+![Rendered page](sscreenshot.png)
 
 ## Files
 
 - `about.html` — the assignment page
-- `screenshot.png` — the page rendered in a browser
-- `validator.png` — proof the page passes the W3C HTML validator
+- `sscreenshot.png` — the page rendered in a browser
+- `vvalidator.png` — proof the page passes the W3C HTML validator
 
 ## Built with
 
