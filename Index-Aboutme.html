@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Change to what you want to call it-->
+  <title>ABOUTpage</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+   /* This is the about hero color for the hero image for the about page */
+    .about-hero {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: linear-gradient(to right, #eceaeb, #8d1f1f, #830722, #eceaeb);
+      color: white;
+      background-image: ;
+    }
+/* This is about hero image styling */
+    .about-hero img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      margin-bottom: 1rem;
+    }
+
+    .about-hero h1 {
+      font-size: 2.75rem;
+      margin: 0.2rem 0;
+    }
+
+    .about-hero p {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+/* This is the call to action button */
+    .cta-btn {
+      background: #f3123b;
+      color: white;
+      padding: 0.7rem 1.4rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+/* This is the hover */
+    .cta-btn:hover {
+      background: #d2780a;
+    }
+/* About section */
+    .about-section {
+      padding: 3rem 2rem;
+      max-width: 960px;
+      margin: auto;
+      line-height: 1.7;
+      font-size: 1.4rem;
+    }
+/* Timeline characteristics */
+    .timeline {
+      border-left: 3px solid #004c97;
+      margin-top: 2rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      width: 12px;
+      height: 12px;
+      background: #004c97;
+      border-radius: 50%;
+    }
+
+    .timeline-item {
+      margin-bottom: 1.5rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .timeline-item h4 {
+      margin: 0;
+      color: #004c97;
+      font-size: 1.5rem;
+    }
+     .timeline-item p {
+      margin: 0;
+      color: #004c97;
+      font-size: 1.3rem;
+    }
+
+    .timeline-item span {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #e538bc;
+    }
+
+    .site-footer {
+      background: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-hero h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .PFP-PHOTO{margin-left: 23%;}
+
+
+    h2{text-align: center;}
+
+
+    .fashion-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.fashion-table caption {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #830722;
+}
+
+.fashion-table th,
+.fashion-table td {
+  border: 1px solid #999;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.fashion-table th {
+  background: #830722;
+  color: white;
+}
+
+.fashion-table tbody tr:nth-child(even) {
+  background: #f2f0f0;
+}
+
+@media (max-width: 768px) {
+  .fashion-section {
+    padding: 1rem;
+  }
+
+  .fashion-form {
+    padding: 1rem;
+  }
+
+  .fashion-table th,
+  .fashion-table td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+.fashion-section {
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 2rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+}
+
+.fashion-section h2 {
+  text-align: center;
+  color: #830722;
+  font-size: 2rem;
+}
+
+.fashion-section .section-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.fashion-form {
+  background: #f2f0f0;
+  border: 2px solid #830722;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.fashion-form .form-group {
+  margin-bottom: 1.3rem;
+}
+
+.fashion-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.fashion-form input,
+.fashion-form select,
+.fashion-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #999;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font: inherit;
+  background: white;
+}
+
+.fashion-form input:focus,
+.fashion-form select:focus,
+.fashion-form textarea:focus {
+  outline: 2px solid #830722;
+  outline-offset: 2px;
+}
+
+.fashion-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.fashion-form button {
+  background: #f3123b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.fashion-form button:hover {
+  background: #830722;
+}
+
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <!-- Change Capstone to the name of website-->
+    <div class="nav-brand">Masuzyo.g CSP</div>
+    <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false">
+      ☰
+      <span class="visually-hidden"></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <!-- Make sure you change this so show what page you are on-->
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="https://www.pinterest.com/rockgallagherco/o-h-i-o/">Gallery</a></li>
+      <li><a href="fashion-section">Projects</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+    <main>
+      <section class="about-hero">
+           <!-- Change to your profile image - contrast color is to force you to change it-->
+        <img src="images/pfp-punkB.jpg" alt="Profile Photo">
+        <h1>MASUZYO WKC GBORDZI</h1>
+       <p>DESIGNER  | SOFTWARE PROGRAMMER | FASHION MANUFACTUER</p>
+         <!-- Going to contact page-->
+       <a href="https://masuzyo170.my.canva.site" class="cta-btn">Connect with Me</a>
+      </section>
+      <DIV CLASS="PFP-PHOTO"> <a href="https://www.grailed.com" target="_blank"><img src="images/pfp-punkblack.png" alt="Image 6" width="260px" HEIGHT="250PX" id="fashion-form"></a> <a href="streetwear-survey"><a href="fashion-section" target="anchor"><img src="images/pfp-pfp.png" alt="Image 6" width="260px" HEIGHT="250PX" id="anchor"></a></a>
+<a href="fashion-table"><img src="images/pfp-art.png" alt="Image 6" width="260px" HEIGHT="250PX" id="anhor"></a>
+      </DIV>
+<section class="about-section">
+     <!-- DO NOT USE A LOT OF TEXT-->
+      <H2>ORIGINS...</H2> 
+  <p>
+   &nbsp; My name is Masuzyo WKC Gbordzi,I was born in Virginia and have mainly lived in Virginia for the most of my life.
+  <p>
+<br> 
+  <p> &nbsp; My desire to learn about web design comes from my want to be able to better my own career and personal hobbies of design, from fashion and clothing pieces, keychains, posters, and even things like furnicure I want to be able to desisgn the things that pop into my head and create/translate them to real creations, visible and tangible.
+   <!-- Short Timeline-->
+  <div class="timeline">
+    <div class="timeline-item">
+      <h4>STARTED GRAPHIC DESIGN JOURNEY...</h4>
+      
+    </div>
+    <div class="timeline-item">
+   
+<section id="graphic-design-journey">
+  <h2>Started Graphic Design Journey</h2>
+
+  <ol>
+    <li>
+      <strong>2018 — Started Graphic Design</strong>
+      <ul>
+        <li>Worked with Screenpress, Widescreen, and Silkscreen.</li>
+        <li>Worked with Adobe Photoshop.</li>
+        <li>Worked with Adobe Illustrator.</li>
+        <li>Worked with Adobe InDesign.</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>2021 — Education and Professional Development</strong>
+      <ul>
+        <li>Graduated high school with Advanced Studies.</li>
+        <li>Obtained OSHA work certification.</li>
+        <li>Continued working in retail.</li>
+        <li>Continued freelance studies.</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+    </div>
+    <div class="timeline-item">
+      <h4>SCHOOLING AND PORTFOLIO...</h4>
+     
+<section id="school-portfolio">
+
+
+  <ul>
+    <li>
+      <strong>Web Design and Development</strong>
+      <dl>
+        <DT>Working in <U>Adobe Dreamweaver</U></DT> <dd> a web development tool that lets you write code and view a live visual preview side-by-</dd>
+        <dt>Working in <U>Visual Studio Code</U></dt> <dd>a free, lightweight source code editor made by Microsoft for Windows, macOS, and</dd>
+        <dt>Building websites with <u>Web-building platforms</U></dt><dd>SHOPIFY, WIX, SQUARESPACE</dd>
+      </ul>
+    </li>
+
+    <li>
+      <strong>E-Commerce and Digital Marketing</strong>
+      <ul>
+        <li>E-commerce website development and platforms</li>
+        <li>Digital marketing studies and skills</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+        
+    </div>
+  </div>
+
+  
+</section>
+
+
+    </main>
+<h2>STREETWEAR BRAND TABLE</h2>
+
+  <table class="fashion-table">
+    <caption>STREETWEAR BRANDS AND THEIR STYLES</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">BRAND</th>
+        <th scope="col">KNOWN FOR</th>
+        <th scope="col">POPULAR PIECES, ICON ITEMS </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Supreme</td>
+        <td>Skate culture and bold branding</td>
+        <td>Box Logo Hoodie</td>
+      </tr>
+      <tr>
+        <td>Half Evil</td>
+        <td>Graphic-heavy streetwear</td>
+        <td>Graphic T-Shirt</td>
+      </tr>
+      <tr>
+        <td>BAPE</td>
+        <td>Camouflage prints and shark designs</td>
+        <td>Shark Hoodie</td>
+      </tr>
+      <tr>
+        <td>StUssy</td>
+        <td>Surf, skate, and streetwear culture</td>
+        <td>Logo T-Shirt</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<section class="fashion-section" id="streetwear-survey">
+  <h2>STREETWEAR &amp; FASHION SURVEY</h2>
+
+  <p class="section-intro">
+    Fashion is a way to express yourself. Express, your
+    brands, clothing pieces, and personal style below.
+  </p>
+
+  <form class="fashion-form" action="#" method="get"
+        onsubmit="event.preventDefault(); alert('Thanks for sharing your fashion opinions!');">
+
+    <div class="form-group">
+      <label for="fashion-name">WHATS YOUR NAME?</label>
+      <input type="text" id="fashion-name" name="fashion-name"
+             placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="favorite-brand">WHAT IS YOUR FAVORITE STREETWEAR BRAND?</label>
+      <select id="favorite-brand" name="favorite-brand" required>
+        <option value="">Choose a brand</option>
+        <option value="Supreme">Supreme</option>
+        <option value="Half Evil">Half Evil</option>
+        <option value="BAPE">BAPE</option>
+        <option value="Stussy">ROCKGALLAGHER</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="favorite-piece">FAVORITE CLOTHING?</label>
+      <input type="text" id="favorite-piece" name="favorite-piece"
+             placeholder="Hoodie, graphic tee, cargos, sneakers..." required>
+    </div>
+
+    <div class="form-group">
+      <label for="personal-style">DESCRIBE YOUR STYLE?</label>
+      <select id="personal-style" name="personal-style">
+        <option value="">Choose your style</option>
+        <option value="Streetwear">Streetwear</option>
+        <option value="Punk">Punk</option>
+        <option value="Vintage">Vintage</option>
+        <option value="Skate">Skate</option>
+        <option value="Minimalist">Minimalist</option>
+        <option value="Experimental">Experimental</option>
+        <option value="Mixed">A mix of everything</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dream-item">WHAT PIECE WOULD YOU BUY RIGHT THIS MOMENT?</label>
+      <input type="text" id="dream-item" name="dream-item"
+             placeholder="A rare BAPE hoodie, new sneakers, etc.">
+    </div>
+
+    <div class="form-group">
+      <label for="fashion-opinion">WHAT RANDOM FASHION TREND DO YOU THINK SHOULD MAKE A COMEBACK? WHAT TREND SHOUDL CEASE TO EXIST...?</label>
+      <textarea id="fashion-opinion" name="fashion-opinion"
+                placeholder="Share your opinions, favorite fits, dream designs, or unpopular takes..."></textarea>
+    </div>
+
+    <button type="submit">Submit Fashion Answers</button>
+  </form>
+
+  
+</section>
+
+ 
+
+
+   <!-- Make this your name-->
+    <footer class="site-footer">
+      <p>&copy; 2026 MASUZYO GBORDZI. All rights reserved. &REG;.</p>
+    </footer>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !expanded);
+        menu.classList.toggle('open');
+      });
+    }
+  </script>
+
+
+
+</body>
+</html>
